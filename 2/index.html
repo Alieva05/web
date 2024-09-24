@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content" >
+            <div class="logo"></div>
+            <div class="site-link">
+                <a href = "images/шашлык.jpg">Шашлычка у Анжи</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#" >Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <ul>
+            <li><a href="http://kubsu.ru">КубГУ (абсолютная гиперссылка)</a></li>
+            <li><a href="https://kubsu.ru">КубГУ (гиперссылка c протоколом https)</a></li>
+            <li><a href="https://kubsu.ru"><img src="images/цветок.jpg" width="600" alt="Цветок"></a></li>
+            <li><a href="v-page.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+            <li><a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+            <li><a href="#fragment-page">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href="index.html?p1=v1&?p2=v2&?p3=v3">Ссылка с тремя параметрами в URL</a></li>
+            <li><a href="index.html?id=fragment-page">Ссылка с параметром id в URL</a></li>
+            <li><a href="curr-directory-page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="about/about.html">Относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../tasks.html">Ссылка на страницу в каталоге уровня выше текущей</a></li>
+            <li><a href="../../web.html">Ссылка на страницу в каталоге двумя уровнями выше текущей</a></li>
+            <li><p> Контекстная ссылка: <br>
+                <h1 style="font-size: 20px;">В этом тексте есть <a href="https://loremipsum.io/ru">Ссылка</a> красивая</h1>
+            </p></li>
+            <li><a href="https://kubsu.ru/index.php#block-system-main">Ссылка на фрагмент страницы стороннего сайта</a></li>
+            <li>
+                <img usemap="#primary" src="images/кубгу.jpg" alt="Лого КубГУ">
+                <map name="primary">
+                    <area shape="rect" coords="0,0,100,100" href="https://kubsu.ru/index.php" alt="Сайт университета">
+                    <area shape="circle" coords="100,100,50" href="https://t.me/kubsunews" alt="Канал телеграм">
+                </map>
+            </li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковиками</a></li>
+            <li><a href="https://kubsu.ru" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+            <li>
+                <ol>
+                    <li><a href="https://kubsu.ru" title="Это сайт КубГУ">Наведи на меня</a></li>
+                    <li><a href="" title="Что-то еще">...</a></li>
+                </ol>
+            </li>
+            <li><a href="ftp://login:password@example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+        </ul>
+        <div class="content">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Название блюда</th>
+                        <th>Гр</th>
+                        <th>Руб</th>
+                        <th>Ккал</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Шашлык свинина шея (шампур)</td>
+                        <td>250</td>
+                        <td>450,00</td>
+                        <td>548</td>
+                    </tr>
+                    <tr>
+                        <td>Колбаски куриные 2 шт</td>
+                        <td>200</td>
+                        <td>320,00</td>
+                        <td>325</td>
+                    </tr>
+                    <tr>
+                        <td>Крылышки Баффало 3 шт</td>
+                        <td>200</td>
+                        <td>250,00</td>
+                        <td>557</td>
+                    </tr>
+                    <tr>
+                        <td>Картофель с салом (шампур)</td>
+                        <td>200</td>
+                        <td>120,00</td>
+                        <td>394</td>
+                    </tr>
+                    <tr>
+                        <td>Шампиньоны (шампур)</td>
+                        <td>200</td>
+                        <td>250,00</td>
+                        <td>73</td>
+                    </tr>
+                    <tr>
+                        <td>Огурчики маринованные</td>
+                        <td>100</td>
+                        <td>90,00</td>
+                        <td>22</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <form action="test@example.com">
+            <label>ФИО: <input type="text" required="required"><br></label>
+            <label>Телефон: <input type="tel" required="required"><br></label>
+            <label>E-mail: <input type="email" required="required"><br></label>
+            <label>Дата рождения: <input type="date" required="required"><br></label>
+
+            <label>Пол:</label>
+            <label><input type="radio" name="gender" required="required">М</label>
+            <label><input type="radio" name="gender" required="required">Ж<br></label>
+
+            <label >
+                    Любимый язык программирования: 
+                    <select name="prog-lang" id="prog-lang" required="required">
+                        <option value="">JavaScript</option>
+                        <option value="">PHP</option>
+                        <option value="">Python</option>
+                        <option value="">Java</option>
+                        <option value="">Pascal</option>
+                        <option value="">С</option>
+                        <option value="">С++</option>
+                        <option value="">Haskel</option>
+                        <option value="">Clojure</option>
+                        <option value="">Prolog</option>
+                        <option value="">Scala</option>
+                    </select>
+                </input  type="checkbox">
+                <br>
+            </label>
+
+            <label>
+                Биография:<br>
+                <textarea name="bio" id="bio"></textarea><br>
+            </label>
+            
+            <label><input type="checkbox">С контрактом ознакомлен(-а)</label><br>
+            <input type="submit" value="Сохранить">
+        </form>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Алиева Анжелика</p>
+        </div>
+    </footer>
+</body>
+</html>
